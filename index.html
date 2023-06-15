@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Site</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="./js/cdnjs.cloudflare.com_ajax_libs_jquery-validate_1.19.3_jquery.validate.min.js"
+    ></script>
+    <script type="text/javascript" src="./js/validate.js"></script>
+    <script type="text/javascript" src="./js/animate.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid px-0 main-font">
+        <nav class="navbar navbar-expand-md navbar-dark bg-black mainHeader">
+          <div class="container-nav">
+            <div class="toggle-button">
+              <button
+                class="navbar-toggler mr-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="header-logo">
+              <a class="navbar-brand" href="#contacts"
+                ><img id="logo" class="imageHeader" src="./images/up-arrow.png" alt="logo" />
+              </a>
+            </div>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <div class="header-menu">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacts">Контакты</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#connection">Обратная связь</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">О компании</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrap-icons">
+            <div class="header-phone">
+              <a class="navbar-brand" href="#">+7 (495)225-17-00</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="28"
+                fill="currentColor"
+                class="bi bi-telephone-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                />
+              </svg>
+            </div>
+            <div class="header-icons">
+              <a class="navbar-brand" href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="22"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  /></svg
+              ></a>
+              <a class="navbar-brand" href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="22"
+                  fill="currentColor"
+                  class="bi bi-heart-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                  /></svg
+              ></a>
+              <a class="navbar-brand" href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="28"
+                  fill="currentColor"
+                  class="bi bi-person-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="contacts">
+      <div class="py-5">
+        <div class="container">
+          <div class="row hidden-md-up">
+            <div class="col-md-4">
+              <div class="card inline-photo show-on-scroll">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp"
+                  class="card-img-top"
+                  alt="Hollywood Sign on The Hill"
+                />
+                <div class="card-block">
+                  <h4 class="card-title">Card title</h4>
+                  <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                  <p class="card-text p-y-1">
+                    Some quick example text to build on the card title .
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card inline-photo show-on-scroll">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp"
+                  class="card-img-top"
+                  alt="Palm Springs Road"
+                />
+                <div class="card-block">
+                  <h4 class="card-title">Card title</h4>
+                  <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                  <p class="card-text p-y-1">
+                    Some quick example text to build on the card title .
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card inline-photo show-on-scroll">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
+                  class="card-img-top"
+                  alt="Los Angeles Skyscrapers"
+                />
+                <div class="card-block">
+                  <h4 class="card-title">Card title</h4>
+                  <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                  <p class="card-text p-y-1">
+                    Some quick example text to build on the card title .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card inline-photo show-on-scroll">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp"
+                  class="card-img-top"
+                  alt="Skyscrapers"
+                />
+                <div class="card-block">
+                  <h4 class="card-title">Card title</h4>
+                  <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                  <p class="card-text p-y-1">
+                    Some quick example text to build on the card title .
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card inline-photo show-on-scroll">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/standard/city/046.webp"
+                  class="card-img-top"
+                  alt="Skyscrapers"
+                />
+                <div class="card-block">
+                  <h4 class="card-title">Card title</h4>
+                  <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                  <p class="card-text p-y-1">
+                    Some quick example text to build on the card title .
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card inline-photo show-on-scroll">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/standard/city/050.webp"
+                  class="card-img-top"
+                  alt="Skyscrapers"
+                />
+                <div class="card-block">
+                  <h4 class="card-title">Card title</h4>
+                  <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                  <p class="card-text p-y-1">
+                    Some quick example text to build on the card title .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row hidden-md-up">
+            <div class="col-md-4">
+              <div class="card inline-photo show-on-scroll">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/standard/city/056.webp"
+                  class="card-img-top"
+                  alt="Hollywood Sign on The Hill"
+                />
+                <div class="card-block">
+                  <h4 class="card-title">Card title</h4>
+                  <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                  <p class="card-text p-y-1">
+                    Some quick example text to build on the card title .
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card inline-photo show-on-scroll">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/standard/city/055.webp"
+                  class="card-img-top"
+                  alt="Palm Springs Road"
+                />
+                <div class="card-block">
+                  <h4 class="card-title">Card title</h4>
+                  <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                  <p class="card-text p-y-1">
+                    Some quick example text to build on the card title .
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card inline-photo show-on-scroll">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/standard/city/054.webp"
+                  class="card-img-top"
+                  alt="Los Angeles Skyscrapers"
+                />
+                <div class="card-block">
+                  <h4 class="card-title">Card title</h4>
+                  <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                  <p class="card-text p-y-1">
+                    Some quick example text to build on the card title .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card inline-photo show-on-scroll">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/standard/city/053.webp"
+                  class="card-img-top"
+                  alt="Skyscrapers"
+                />
+                <div class="card-block">
+                  <h4 class="card-title">Card title</h4>
+                  <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                  <p class="card-text p-y-1">
+                    Some quick example text to build on the card title .
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card inline-photo show-on-scroll">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/standard/city/052.webp"
+                  class="card-img-top"
+                  alt="Skyscrapers"
+                />
+                <div class="card-block">
+                  <h4 class="card-title">Card title</h4>
+                  <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                  <p class="card-text p-y-1">
+                    Some quick example text to build on the card title .
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card inline-photo show-on-scroll">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/standard/city/051.webp"
+                  class="card-img-top"
+                  alt="Skyscrapers"
+                />
+                <div class="card-block">
+                  <h4 class="card-title">Card title</h4>
+                  <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                  <p class="card-text p-y-1">
+                    Some quick example text to build on the card title .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container contacts show-on-scroll" id="about">
+      <h3>О Компании</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, adipisci nulla? Placeat
+        esse, fugiat, aperiam consectetur maxime in eos itaque dolorum nihil beatae commodi fuga
+        explicabo, sint culpa harum dolores.
+      </p>
+      <p>
+        Consequatur nam tempora necessitatibus quas autem deleniti ab impedit aliquam vero facilis
+        modi, nesciunt nobis labore. Dignissimos omnis hic rerum pariatur nulla placeat sint a
+        aspernatur incidunt autem, perspiciatis ad!
+      </p>
+      <p>
+        Error maxime quasi voluptates similique, nihil, explicabo earum doloribus, consequatur
+        officiis sapiente recusandae quidem placeat harum voluptas quia praesentium eius labore
+        excepturi consectetur facilis nostrum nisi. Molestiae optio eos nobis!
+      </p>
+      <p>
+        Assumenda omnis repellat architecto laboriosam qui adipisci perferendis itaque officia id
+        repudiandae maxime neque sit nostrum sapiente, minus optio odit doloribus! Facilis esse
+        ipsam vero veniam, non fugiat. Omnis, nihil.
+      </p>
+      <p>
+        Animi ullam sequi, beatae perspiciatis, voluptates consectetur sunt nam explicabo accusamus
+        ipsum itaque. Aperiam ipsum illum modi at, maiores laborum, magnam, natus ducimus doloribus
+        alias laudantium praesentium ut nostrum culpa?
+      </p>
+      <p>
+        Quas tempore, libero excepturi unde odit esse facilis delectus fuga voluptas. Reiciendis id
+        architecto natus ex, quasi inventore cum molestias mollitia doloribus ipsa? Aperiam neque
+        placeat quaerat asperiores quam hic!
+      </p>
+      <p>
+        Sit illo at dolores modi vel distinctio, beatae, hic dignissimos voluptate porro omnis
+        assumenda, placeat odio adipisci praesentium tempora ad. Praesentium minima id nostrum velit
+        quia at ipsam culpa voluptate?
+      </p>
+      <p>
+        Ex cumque ipsam distinctio deleniti cum dolores accusamus veritatis iste maxime modi vero
+        facere ratione, quasi repellendus minima quae amet odio saepe tenetur ipsa perspiciatis
+        nobis explicabo. Sint, nam? Eligendi.
+      </p>
+      <p>
+        Quae animi vel pariatur aliquam cupiditate, fugiat ipsum ipsam, nobis possimus vitae ea
+        mollitia! Soluta in placeat voluptas praesentium molestias nam dolorem dolorum inventore,
+        doloremque, recusandae cupiditate repellendus, accusantium ipsum?
+      </p>
+      <p>
+        Culpa enim quidem assumenda nisi praesentium minus vero laborum inventore ducimus eos sunt
+        harum quasi cupiditate voluptatem fuga, ab aliquid iste necessitatibus distinctio ratione,
+        perferendis non. Veniam velit sint fuga.
+      </p>
+    </section>
+
+    <section id="connection" style="background-color: rgb(239, 210, 153)">
+      <div class="container">
+        <form id="contact-form" class="py-5 mx-auto col-10 col-md-8 col-lg-6">
+          <h3>Обратная связь</h3>
+          <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Введите имя"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Адрес почты</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Ваше сообщение</label>
+            <textarea class="form-control" id="message" name="message" rows="7"></textarea>
+          </div>
+          <button type="submit" class="btn btn-lg btn-primary size-button">Отправить</button>
+        </form>
+      </div>
+    </section>
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+    >
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="text-muted">© 2021 Company, Inc</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="text-muted" href="https://www.linkedin.com/in/andrey-vasilkov-2172b3204/"
+            ><img src="./images/linkedin.svg"
+          /></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="https://github.com/Andrei-V-code?tab=repositories"
+            ><img src="./images/git.svg"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
